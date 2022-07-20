@@ -7,7 +7,17 @@ const App = () => {
   const [items, setItems] = useState([])
   const [idLoading, setIsLoading] = useState(true)
 
-  useEffect
+  useEffect(() => {
+    const fetchItems = async () => {
+      const result = await axios(
+        `https://www.breakingbadapi.com/api/characters?category=Better+Call+Saul`
+      )
+      console.log(result.data)
+    }
+
+    fetchItems()
+  }, [])
+
   return (
     <div className="container">
       <Header />
