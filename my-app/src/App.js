@@ -6,7 +6,7 @@ import CharacterGrid from './components/characters/CharacterGrid'
 
 const App = () => {
   const [items, setItems] = useState([])
-  const [idLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const fetchItems = async () => {
