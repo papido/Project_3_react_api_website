@@ -16,7 +16,7 @@ const Search = ({ getValue }) => {
           className="form-control"
           placeholder="Search characters"
           value={text}
-          onChange={(e) => onChange(e.target.value)}
+          onChange={(event) => onChange(event.target.value)}
           autoFocus
         />
       </form>
