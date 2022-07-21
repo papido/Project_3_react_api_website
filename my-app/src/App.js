@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div className="container">
       <Header />
-      <Search />
+      <Search getValue={(v) => setValue(v)} />
       <CharacterGrid isLoading={isLoading} items={items} />
     </div>
   )

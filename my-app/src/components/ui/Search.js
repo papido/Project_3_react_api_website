@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 
-const Search = () => {
+const Search = ({ getValue }) => {
   const [text, setText] = useState('')
 
-  const onChange = (q) => {}
+  const onChange = (v) => {
+    setText(v)
+    getValue(v)
+  }
+
   return (
     <section className="Search">
       <form>
