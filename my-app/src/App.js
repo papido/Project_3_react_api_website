@@ -15,14 +15,14 @@ const App = () => {
       const result = await axios(
         `https://www.breakingbadapi.com/api/characters?name=${value}`
       )
-      console.log(result.data)
+      // console.log(result.data)
 
       setItems(result.data)
       setIsLoading(false)
     }
 
     fetchItems()
-  }, [])
+  }, [value])
 
   return (
     <div className="container">
