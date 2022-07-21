@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 const Search = () => {
   const [text, setText] = useState('')
+
+  const onChange = (q) => {}
   return (
     <section className="Search">
       <form>
@@ -10,7 +12,7 @@ const Search = () => {
           className="form-control"
           placeholder="Search characters"
           value={text}
-          onChange={(e) => setText(e.target.value)}
+          onChange={(e) => onChange(e.target.value)}
           autoFocus
         />
       </form>
